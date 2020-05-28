@@ -71,7 +71,7 @@ rm -rf tarfiles
 mkdir tarfiles
 TARGET_DIR="$ROOT/tarfiles"
 tar -czf $TARGET_DIR/$PACKAGE_NAME-$OD_VERSION.tar.gz $PACKAGE_NAME-$OD_VERSION
-tar -tavf $TARGET_DIR/$PACKAGE_NAME-$OD_VERSION.tar.gz
+#tar -tavf $TARGET_DIR/$PACKAGE_NAME-$OD_VERSION.tar.gz
 sha512sum $TARGET_DIR/$PACKAGE_NAME-$OD_VERSION.tar.gz  > $TARGET_DIR/$PACKAGE_NAME-$OD_VERSION.tar.gz.sha512
 sha512sum -c $TARGET_DIR/$PACKAGE_NAME-$OD_VERSION.tar.gz.sha512
 echo " CHECKSUM FILE "
